@@ -19,4 +19,4 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - name: Run ESLint
-      run: git diff --name-only ..origin/main **/*.js* | xargs npx eslint
+      run: git diff --name-only origin/main HEAD **/*.js* | xargs npx eslint
